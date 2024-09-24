@@ -1,0 +1,122 @@
+/* Comment Form Styling */
+#comment_form {
+    display: flex;
+    justify-content: center; /* Center the form */
+    align-items: center;
+    margin-top: 20px;
+    width: 100%; /* Full width so it aligns with the image */
+}
+
+#comment_form .comment-inputs {
+    display: flex;
+    justify-content: space-between; /* Space between the fields */
+    width: 90%; /* Ensure the form spans a large width of the page */
+    max-width: 1000px; /* Set a max width to match the comment box size */
+    align-items: center; /* Center the button and input fields vertically */
+}
+
+#comment_form input#comment_form_author {
+    width: 15%; /* Author field is smaller */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#comment_form input#comment_form_content {
+    width: 70%; /* Content field is longer to match the comment box width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px; /* Space between the author and content */
+}
+
+#comment_form button {
+    width: 10%; /* The button size to balance the layout */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#comment_form button:hover {
+    background-color: #45a049;
+}
+
+/* Comment Section Styling */
+#comments_section {
+    margin-top: 20px;
+}
+
+/* Individual Comment Row */
+.comment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    width: 90%; /* Match the comment form width */
+    max-width: 1000px; /* Set max width to keep it in line with the image */
+    word-wrap: break-word; /* Ensures long words break and wrap */
+    white-space: normal; /* Allows text to wrap to a new line */
+    overflow-wrap: break-word; /* Ensures long text without spaces wraps */
+}
+
+/* Comment Details (author, content, date) */
+.comment-text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;  /* The comment text area will take most of the space */
+    word-wrap: break-word; /* Ensures long words break and wrap */
+    white-space: normal; /* Allows text to wrap to a new line */
+    overflow-wrap: break-word; /* Ensures long text without spaces wraps */
+}
+
+.comment-text .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    margin-left: 10px;
+    word-wrap: break-word; /* Ensure long author names wrap */
+    white-space: normal; /* Wrap text to a new line */
+    overflow-wrap: break-word; /* Ensures long text without spaces wraps */
+}
+
+.comment-text .content {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+    margin-left: 10px;
+    word-wrap: break-word; /* Ensure long comments wrap */
+    white-space: normal; /* Wrap text to a new line */
+    overflow-wrap: break-word; /* Ensures long text without spaces wraps */
+}
+
+.comment-text .date {
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+    word-wrap: break-word; /* Ensure long date formats wrap if necessary */
+    white-space: normal; /* Wrap text to a new line */
+    overflow-wrap: break-word; /* Ensures long text without spaces wraps */
+}
+
+
+/* Delete Icon Styling */
+.delete-comment-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url('../media/bin.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.delete-comment-icon:hover {
+    opacity: 0.7;
+}

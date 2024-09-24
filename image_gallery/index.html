@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/gallery.css" rel="stylesheet" type="text/css" />
+    <link href="style/comments.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" id="title">Web Gallery</a>
+    </header>
+
+    <button class="upload_toggle_btn" id="upload_toggle_btn">Upload Image</button>
+
+    <form id="img_upload_form" style="display: none;">
+        <div class="input_fields">
+          <!-- Name Input with Placeholder -->
+          <input type="text" id="author" name="author" placeholder="Enter Your Name">
+      
+          <!-- Image Title Input with Placeholder -->
+          <input type="text" id="title_input" name="title_input" placeholder="Enter Image Title">
+      
+          <!-- Image URL Input with Placeholder -->
+          <input type="url" id="url_input" name="url_input" placeholder="Enter Image URL">
+      
+          <!-- Submit Button -->
+          <button class="form_button" type="submit">Upload</button>
+        </div>
+      </form>
+
+    <!-- Gallery Container -->
+    <div id="gallery">
+        <!-- Image and Title will be displayed here -->
+    </div>
+
+    <!-- Navigation Buttons (move outside the gallery container) -->
+    <div class="nav-buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Comment Form -->
+    <form id="comment_form">
+        <div class="comment-inputs">
+            <input type="text" id="comment_form_author" placeholder="Your Name">
+            <input type="text" id="comment_form_content" placeholder="Write a comment...">
+            <button class="comment_submit" type="submit">Post Comment</button>
+        </div>
+    </form>
+
+    <!-- Comments Section -->
+    <div id="comments_section">
+        <!-- Comments will be displayed here -->
+    </div>
+
+    <footer>
+      <a href="./credits.html">credits</a>
+    </footer>
+    <script type="module" src="js/index.mjs"></script>
+  </body>
+</html>

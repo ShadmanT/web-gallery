@@ -1,0 +1,76 @@
+/* Center the gallery, image, and navigation buttons */
+#gallery {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the image and navigation buttons */
+}
+
+/* Navigation buttons container */
+.nav-buttons {
+    display: flex;
+    justify-content: center;  /* Center the buttons inside the container */
+    gap: 20px;  /* Add space between buttons */
+    margin-top: 10px;
+    align-items: center;  /* Align buttons vertically in the center */
+    width: auto;  /* Make the container auto-sized to fit the buttons */
+}
+
+/* Button styling */
+button {
+    width: 150px;  /* Set a fixed width for both buttons to ensure equal size */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Style for each image container */
+#gallery .image-container {
+    position: relative;  /* Needed for absolute positioning of the delete icon */
+    text-align: center;
+}
+
+/* Style for image titles */
+#gallery .image-container h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;  /* Set the title color to white */
+}
+
+
+/* Style for images */
+#gallery .image-container img {
+    border: 2px solid white;
+    /* padding: 5px; */
+    width: 90%;  /* Adjust the width for images */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Style for the delete icon */
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: -20px;  /* Move the icon further to the right, outside of the image */
+    width: 40px;
+    height: 40px;
+    background-image: url('../media/bin.png');  /* Set the background image for the trash icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.delete-icon:hover {
+    opacity: 0.7;  /* Optional: Fade effect on hover */
+}
